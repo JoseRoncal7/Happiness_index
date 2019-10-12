@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -11,20 +9,17 @@
   <title>Happiness Index Project </title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
   <!-- Custom styles for this template -->
-  <link href="css/grayscale.min.css" rel="stylesheet">
-
+  <link href="static/css/grayscale.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -39,24 +34,23 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="map.html">Map</a>
+            <a class="nav-link js-scroll-trigger" href="{{ url_for('map') }}">Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="graph.html">Metrics</a>
+            <a class="nav-link js-scroll-trigger" href="{{ url_for('graph') }}">Metrics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="happy.html">Top10 </a>
+            <a class="nav-link js-scroll-trigger" href="{{ url_for('happy') }}">Top10 </a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="sad.html">Low10 </a>
+            <a class="nav-link js-scroll-trigger" href="{{ url_for('sad') }}">Low10 </a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="comparison.html">Comparisson </a>
+            <a class="nav-link js-scroll-trigger" href="{{ url_for('comparison') }}">Comparison </a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="status.html">Country Status </a>
+            <a class="nav-link js-scroll-trigger" href="{{ url_for('status') }}">Country Status </a>
           </li> 
-
         </ul>
       </div>
     </div>
@@ -82,7 +76,7 @@
           <p class="text-white-50">Happiness is increasingly considered an important and useful way to guide public policy and measure its effectiveness.The report incorporates analysis by experts in economics, neuroscience and statistics, and shows how measurements of well-being can be used to evaluate a country’s progress.</p>
         </div>
       </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
+      <img src="static/img/ipad.png" class="img-fluid" alt="">
     </div>
   </section>
 
@@ -93,7 +87,7 @@
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/people.jpg" alt="">
+          <img class="img-fluid mb-3 mb-lg-0" src="static/img/people.jpg" alt="">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
@@ -115,7 +109,7 @@
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <img class="img-fluid" src="static/img/demo-image-01.jpg" alt="">
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
@@ -133,7 +127,7 @@
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          <img class="img-fluid" src="static/img/demo-image-02.jpg" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
@@ -159,14 +153,14 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+  <script src="static/js/grayscale.min.js"></script>
 
 </body>
 

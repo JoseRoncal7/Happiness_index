@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>10 Most Happy Countries</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
 <div class="container">
@@ -18,12 +18,14 @@
                             <div class="container-fluid">
                             <!-- <div class="navbar-header"> -->
                                 <ul class="nav navbar-nav">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="sad.html">Low10</a></li>
-                                    <li><a href="comparison.html">Comparison</a></li>
-                                    <li class="active"><a href="happy.html">Top10</a></li>
-                                    <li><a href="status.html">Country Status</a></li>
-                                </ul>
+                                <li><a href="{{ url_for('home') }}">Home</a></li>
+                                <li><a href="{{ url_for('map') }}">Map</a></li>
+                                <li><a href="{{ url_for('sad') }}">Low10</a></li>
+                                <li><a href="{{ url_for('status') }}">Country Status</a></li>
+                                <li class="active"><a href="{{ url_for('happy') }}">Top10</a></li>
+                                <li><a href="{{ url_for('graph') }}">Metrics</a></li>
+                                <li><a href="{{ url_for('comparison') }}">Comparison</a></li>
+                            </ul>
                             </div>
                         </nav>
                     </div>  
@@ -34,7 +36,7 @@
     </div>
     <div class="row">
         <div class="col-md-6">
-            <img src="images/top_10_happy_countries.png" width="1000" height="500">
+            <img src="../static/images/top_10_happy_countries.png" width="1000" height="500">
         </div>
     </div> 
     <div class="row"> 

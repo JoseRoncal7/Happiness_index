@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Happiness Index Map</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/world-highres.js"></script>
+  
+</head>
+<body>
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-6">
+                            <nav class="navbar navbar-inverse">
+                                <div class="container-fluid">
+                                <!-- <div class="navbar-header"> -->
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                                        <li class="active"><a href="{{ url_for('map') }}">Map</a></li>
+                                        <li><a href="{{ url_for('sad') }}">Low10</a></li>
+                                        <li><a href="{{ url_for('status') }}">Country Status</a></li>
+                                        <li><a href="{{ url_for('happy') }}">Top10</a></li>
+                                        <li><a href="{{ url_for('graph') }}">Metrics</a></li>
+                                        <li><a href="{{ url_for('comparison') }}">Comparison</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>  
+                    </div>
+
+  <div id="container"></div>
+
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+
+    <script type="text/javascript" src="static/config.js"></script>
+</body>
+
+
+  </html>
